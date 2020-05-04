@@ -1,4 +1,4 @@
-{% set version = '0.9.0' %}
+{% set version = "0.9.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1002
+  number: 1003
 
   rpaths:
     - lib/R/lib/
@@ -41,16 +41,14 @@ test:
 
 about:
   home: https://github.com/HenrikBengtsson/R.huge
-  license: LGPL (>= 2.1)
-  summary: 'DEPRECATED. Do not start building new projects based on this package. Cross-platform
-    alternatives are the following packages: bigmemory (CRAN), ff (CRAN), BufferedMatrix
-    (Bioconductor).  The main usage of it was inside the aroma.affymetrix package. (The
-    package currently provides a class representing a matrix where the actual data is
-    stored in a binary format on the local file system.  This way the size limit of
-    the data is set by the file system and not the memory.)'
+  license: LGPL-2.1-or-later
+  summary: 'DEPRECATED. Do not start building new projects based on this package. Cross-platform alternatives are the following packages: bigmemory (CRAN), ff (CRAN), BufferedMatrix (Bioconductor).  The main usage of it was inside the aroma.affymetrix package. (The package currently provides a class representing a matrix
+    where the actual data is stored in a binary format on the local file system.  This way the size limit of the data is set by the file system and not the memory.)'
 
   license_family: LGPL
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 extra:
   recipe-maintainers:
     - conda-forge/r
