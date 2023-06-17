@@ -1,11 +1,11 @@
-About r-r.huge
-==============
+About r-r.huge-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.huge-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/HenrikBengtsson/R.huge
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.huge-feedstock/blob/main/LICENSE.txt)
 
 Summary: DEPRECATED. Do not start building new projects based on this package. Cross-platform alternatives are the following packages: bigmemory (CRAN), ff (CRAN), BufferedMatrix (Bioconductor).  The main usage of it was inside the aroma.affymetrix package. (The package currently provides a class representing a matrix where the actual data is stored in a binary format on the local file system.  This way the size limit of the data is set by the file system and not the memory.)
 
